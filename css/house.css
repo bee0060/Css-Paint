@@ -1,0 +1,21 @@
+.house-width{
+	width: 600px;
+}
+
+.house{
+	position: absolute;
+	bottom: 0;
+	left: 600px;
+	height: 500px;
+	border: 1px solid #000;
+}
+
+.house-roof{
+	height: 180px;
+	border: 1px solid #000;
+}
+
+.house-wall{
+	height: 300px;
+	border: 1px solid #000;
+}
