@@ -1,21 +1,53 @@
-.house-width{
+.house-width {
 	width: 600px;
 }
 
-.house{
-	position: absolute;
-	bottom: 0;
+.house {
+	bottom: 20px;
+	height: 400px;
 	left: 600px;
-	height: 500px;
-	border: 1px solid #000;
+	position: absolute;
 }
 
-.house-roof{
+.house-roof {
+	background: gold;
+	border: 3px solid #000;
+	left: -30px;
 	height: 180px;
-	border: 1px solid #000;
+	position: relative;
 }
 
-.house-wall{
-	height: 300px;
+.house-roof-left {
+	border-left-width: 15px;
+	float: left;
+	-webkit-transform: matrix(0.25, 0, -0.4, 1, -298, 0);
+}
+
+.house-roof-right {
+	-webkit-transform: matrix(1, 0, 0.3, 1, 0, 0);
+}
+
+.house-wall {
 	border: 1px solid #000;
+	height: 220px;
+}
+
+.house-wall-door {
+	background: orange;
+	bottom: 0px;
+	height: 180px;
+	left: 110px;
+	position: absolute;
+	width: 110px;
+}
+
+.house-wall-door-handle {
+	background: brown;
+	border: 1px solid #000;
+	border-radius: 50%;
+	height: 15px;
+	position: absolute;
+	right: 10px;
+	top: 90px;
+	width:15px;
 }
