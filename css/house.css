@@ -28,8 +28,18 @@
 }
 
 .house-wall {
-	border: 1px solid #000;
+	border: 2px solid #000;
 	height: 220px;
+}
+.house-wall::before{
+	border: 2px solid #000;
+	height: 220px;
+	width:130px;
+	content:'';
+	left: -133px;
+	top: 186px;
+	position: absolute;
+	display: block;
 }
 
 .house-wall-door {
