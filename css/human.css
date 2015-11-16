@@ -1,15 +1,17 @@
-.left-190 {
-	left: 190px;
-}
-
-.bottom-25 {
-	bottom: 25px;
-}
-
 .human {
 	height:170px;
 	position: absolute;
 	width: 120px;
+}
+
+.human-pos-1 {
+	left: 250px;
+	bottom: 25px;
+}
+
+.human-pos-2 {
+	left: 40px;
+	bottom: 60px;
 }
 
 .lines {
@@ -57,5 +59,19 @@
 	width: 50px;
 
 	-webkit-transform: rotate(45deg);
+	-webkit-transform-origin: 1px 1px;
+}
+
+.human-legs-1 {
+	border: 3px solid #000;
+	border-bottom: none;
+	border-right: none;
+	height:50px;
+	left: 55px;
+	position: absolute;
+	top: 120px;
+	width: 50px;
+	
+	-webkit-transform: rotate(-2deg);
 	-webkit-transform-origin: 1px 1px;
 }
