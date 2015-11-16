@@ -8,54 +8,53 @@
 
 .human {
 	height:170px;
-	width: 120px;
-
 	position: absolute;
+	width: 120px;
 }
 
 .lines {
+	display: block;
 	position: absolute;
 	top: -20px;
 	width: 220px;
-	display: block;
 }
 
 .human-head-normal {
 	border: 2px solid #000;
-	height: 40px;
-	width: 40px;
 	border-radius: 50%;
+	height: 40px;
+	left: 35px;
 	position: absolute;
 	top: 20px;
-	left: 35px;
+	width: 40px;
 }
 .human-body-normal {
-	height: 60px;
-	width: 3px;
 	background: #000;
+	height: 60px;
 	left: 55px;
-	top: 62px;
 	position: absolute;
+	top: 62px;
+	width: 3px;
 }
 
 .human-arms-normal {
-	width: 80px;
-	height: 3px;
-	position: absolute;
 	background: #000;
+	height: 3px;
 	left: 18px;
+	position: absolute;
 	top: 75px;
+	width: 80px;
 }
 
 .human-legs-normal {
-	height:50px;
-	width: 50px;
 	border: 3px solid #000;
 	border-bottom: none;
 	border-right: none;
-	position: absolute;
+	height:50px;
 	left: 55px;
+	position: absolute;
 	top: 120px;
+	width: 50px;
 
 	-webkit-transform: rotate(45deg);
 	-webkit-transform-origin: 1px 1px;
