@@ -1,0 +1,57 @@
+.cloud-animate-1 {
+	-webkit-animation-duration: 5s;
+  	-webkit-animation-name: cloudMove-1;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+.cloud-animate-2 {
+	-webkit-animation-duration: 8s;
+  	-webkit-animation-name: cloudMove-2;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes cloudMove-1 {
+	from,10% {	
+		left: 35% 
+	}
+
+	20% {
+		top : 10px;
+	}
+
+	50% {
+		top: 50px;
+	}
+
+	80% {
+		top: 20px; 
+	}
+
+	90%,to { 	
+		left: 25%	 
+	}
+}
+
+@-webkit-keyframes cloudMove-2 {
+	from,10% {		
+		left: 80% 
+	}
+
+	20% {
+		top : 30px;
+	}
+
+	50% {
+		top: 80px;
+	}
+
+	80% {
+		top: 10px; 
+	}
+
+	90%,to { 
+		left: 60% 		
+	}
+}
