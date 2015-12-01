@@ -3,14 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Css Paint</title>
-	<link rel="stylesheet" type="text/css" href="../../css/sun.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/house.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/human.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/cloud.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/tree.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/sun.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/house.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/human.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/cloud.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/tree.css">
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/apple.css">
 
-	<link rel="stylesheet" type="text/css" href="../../css/human-animate.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/cloud-animate.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/human-animate.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/sun-house/cloud-animate.css" />
 
 	<script type="text/javascript" src="js/analysis.js"></script>
 </head>
@@ -68,18 +69,27 @@
 	</div>
 
 	<div class="tree">
-		<div>
+		<div class="tree-top">
 			<div class="tree-crowwn tree-crowwn-left"></div>
 			<div class="tree-crowwn tree-crowwn-top"></div>
 			<div class="tree-crowwn tree-crowwn-right"></div>
 			<div class="tree-crowwn tree-crowwn-bottom"></div>
 		</div>
-		<div class="tree-trunk"></div>
+		<div class="tree-middle">
+			<div class="tree-trunk"></div>
+		</div>
 		<div class="tree-bottom">
 			<div class="tree-root tree-root-left"></div>
 			<div class="tree-root tree-root-middle"></div>
 			<div class="tree-root tree-root-right"></div>
 		</div>
+	</div>
+	<!-- TODO: 	1.苹果左右震动一下再下跌
+			2.苹果跌下来后向左滚动几圈 -->
+	<div class="apple">
+		<div class="apple-body apple-left"></div>
+		<div class="apple-body apple-right"></div>
+		<div class="apple-stalk"></div>
 	</div>
 </body>
 </html>

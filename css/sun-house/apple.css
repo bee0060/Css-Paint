@@ -1,0 +1,58 @@
+.apple {
+	bottom: 360px;
+	height: 60px;	
+	position: absolute;
+	right: 480px;
+	width: 60px;
+	z-index: 3;
+
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-delay: 1s;
+  	-webkit-animation-name: appleDrop;
+  	-webkit-animation-timing-function: cubic-bezier(0.5, 0.1, 0.85, 0.3);
+  	-webkit-animation-fill-mode: forwards;
+}
+
+.apple-body {
+	background-color: #ff3300;	
+	border-radius: 75% 75% 90% 90%;
+	height: 50px;
+	position: absolute;
+	width: 37px;
+	z-index: 3;
+}
+
+.apple-left {
+
+}
+
+.apple-right {
+	right:2px;
+}
+
+.apple-stalk {
+	border: none;
+	border-radius: 100%;
+	border-right: 3px solid #000;
+	height:20px;
+	left: 8px;
+	position: absolute;
+	top:-10px;
+	width:20px;
+	z-index: 2;
+}
+
+@-webkit-keyframes appleDrop{
+	from{
+		 
+	}
+	20%{
+		 
+	}
+	80%{
+		 
+	}
+	to{
+		bottom: 35px;
+	}
+}

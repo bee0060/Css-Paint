@@ -1,64 +1,64 @@
 .tree{
-	width: 500px;
+	bottom: 10px;
 	height: 700px;
 	position: absolute;
-	bottom: 10px;
 	right: 120px;
+	width: 500px;
 }
 
 .tree-crowwn {
-	position: absolute;
-	border-radius: 50%;
 	background-color: green;
+	border-radius: 50%;
+	position: absolute;
 	z-index: 2;
 }
 
 .tree-crowwn-left {
+	height: 250px;
 	top: 150px;
 	width: 250px;
-	height: 250px;
 }
 
 .tree-crowwn-top {
+	height: 320px;
 	left: 100px;
 	width: 320px;
-	height: 320px;
 }
 
 .tree-crowwn-right {
-	top: 150px;
-	left: 250px;
-	width: 250px;
 	height: 250px;
+	left: 250px;
+	top: 150px;
+	width: 250px;
 }
 
 .tree-crowwn-bottom {
-	top: 270px;
-	left: 150px;
-	width: 200px;
 	height: 120px;
+	left: 150px;
+	top: 270px;
+	width: 200px;
 }
 
 .tree-trunk {
-	top: 350px;
-	left: 170px;
 	background-color: #5d2323;
-	width: 180px;
 	height: 280px;
+	left: 170px;
 	position: absolute;
+	top: 350px;
+	width: 180px;
 	z-index: 1;
 }
 
 .tree-bottom {
-	top: 630px;
 	position: absolute;
+	top: 630px;
 }
 
 .tree-root {
 	background-color: #503333;	
-	width: 20px;
 	height: 30px;
 	position: absolute;
+	width: 20px;
 }
 
 .tree-root-left {
