@@ -7,7 +7,7 @@
 	z-index: 3;
 
 	-webkit-animation-duration: 1.5s;
-	-webkit-animation-delay: 1s;
+	-webkit-animation-delay: 18s;
   	-webkit-animation-name: appleDrop;
   	-webkit-animation-timing-function: cubic-bezier(0.5, 0.1, 0.85, 0.3);
   	-webkit-animation-fill-mode: forwards;
