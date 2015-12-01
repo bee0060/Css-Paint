@@ -1,23 +1,19 @@
 .cloud-animate-1 {
-	-webkit-animation-duration: 5s;
+	-webkit-animation-duration: 20s;
   	-webkit-animation-name: cloudMove-1;
   	-webkit-animation-iteration-count: infinite;
   	-webkit-animation-direction: alternate;
 }
 
 .cloud-animate-2 {
-	-webkit-animation-duration: 8s;
+	-webkit-animation-duration: 20s;
   	-webkit-animation-name: cloudMove-2;
   	-webkit-animation-iteration-count: infinite;
   	-webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes cloudMove-1 {
-	from,10% {	
-		left: 35% 
-	}
-
-	20% {
+	25% {
 		top : 10px;
 	}
 
@@ -25,21 +21,17 @@
 		top: 50px;
 	}
 
-	80% {
+	75% {
 		top: 20px; 
 	}
 
-	90%,to { 	
-		left: 25%	 
+	to { 	
+		left: 10%	 
 	}
 }
 
 @-webkit-keyframes cloudMove-2 {
-	from,10% {		
-		left: 80% 
-	}
-
-	20% {
+	25% {
 		top : 30px;
 	}
 
@@ -47,11 +39,11 @@
 		top: 80px;
 	}
 
-	80% {
+	75% {
 		top: 10px; 
 	}
 
-	90%,to { 
-		left: 60% 		
+	to { 
+		left: 90% 		
 	}
 }
