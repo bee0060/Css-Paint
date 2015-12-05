@@ -1,0 +1,40 @@
+div {
+	/*border: 1px solid #000;*/
+}
+
+.doraemon {
+	height: 500px;
+	width: 500px;
+}
+
+.head {
+	background-color: rgb(2, 159, 227);
+	border-radius: 50%;
+	height: 280px;
+	margin: 0px auto;
+	width: 310px;
+}
+
+.eyes {
+	height: 80px;
+	margin: 10px auto;
+	padding-top: 10px;
+	width: 120px;
+}
+
+.eye {
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 80px;
+	width: 60px;
+}
+
+.eye-left {
+	float: left;
+}
+
+.eye-right {
+	float: right;
+}
