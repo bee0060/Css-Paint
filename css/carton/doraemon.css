@@ -56,6 +56,10 @@ div {
 	border: 2px solid black;
 }
 
+.border-black-3 {
+	border: 3px solid black;
+}
+
 /*卡通组件*/
 .doraemon {
 	height: 500px;
@@ -115,7 +119,9 @@ div {
 	border-bottom-right-radius: 80% 95%;
 	height: 230px;
 	margin: -30px auto;
-	width: 255px;
+	width: 270px;
+
+	z-index: 5;
 }
 
 .nose {
@@ -134,15 +140,95 @@ div {
 .nasal-groove{
 	height: 40px;
 	width: 2px;
+	z-index: 12;
 }
 
 .bread-field {
 	height: 40px;
-	margin-top: -40px;
 	width: 240px;
+	z-index: 10;
 }
 
 .bread {
 	height: 2px;
 	width: 80px;
+}
+
+.bread-left {
+	left: 10px;
+	-webkit-transform-origin: right top;
+}
+
+.bread-left-1 {
+	
+	top: -5px;
+	-webkit-transform: rotate(20deg);
+}
+
+.bread-left-2 {
+	top: 10px;
+	-webkit-transform: rotate(5deg);
+}
+
+.bread-left-3 {
+	top: 20px;
+	-webkit-transform: rotate(-15deg);
+}
+
+.bread-right {
+	right: 10px;
+	-webkit-transform-origin: left top;
+}
+
+.bread-right-1 {
+	top: -5px;
+	-webkit-transform: rotate(-20deg);
+}
+
+.bread-right-2 {
+	top: 10px;
+	-webkit-transform: rotate(-5deg);
+}
+
+.bread-right-3 {
+	top: 20px;
+	-webkit-transform: rotate(15deg);
+}
+
+.lips {
+	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+	border-style: none;
+	border-top-style: solid;
+
+	height: 75px;
+	width: 250px;
+}
+
+.lips-left {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 30%;
+	border-right: none;
+	height: 50px;
+	left: -25px;
+	top: -50px;
+	width: 50px;
+
+	-webkit-transform: rotate(20deg) ;
+}
+
+.lips-right {
+	border-top-right-radius: 50%;
+	border-top-left-radius: 0%;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 40% 25%;
+	border-left: none;
+	height: 67px;
+	right: -26px;
+	top: -47px;
+	width: 50px;
+
+	-webkit-transform: rotate(0deg) ;
 }
