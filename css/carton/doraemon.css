@@ -197,6 +197,7 @@ div {
 
 .lips {
 	height: 75px;
+	overflow: hidden;
 	width: 250px;
 }
 
@@ -212,7 +213,10 @@ div {
 }
 
 .lips-center-left {
-
+	height: 50px;
+	margin-left: -30px;
+	margin-top: -50px;
+	width: 100px;
 }
 
 .lips-center-right {
