@@ -12,6 +12,14 @@ div {
 	position: relative;
 }
 
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
 .m-hoz-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -144,7 +152,7 @@ div {
 }
 
 .bread-field {
-	height: 45px;
+	height: 44px;
 	width: 240px;
 	z-index: 10;
 }
@@ -197,25 +205,43 @@ div {
 
 .lips {
 	height: 75px;
-	overflow: hidden;
 	width: 250px;
 }
 
-.lips-center {
+.lips-center {	
+	height: 75px;
+	overflow: hidden;
+	width: 180px;
+}
+
+.lips-center-inside {
 	border-top-left-radius: 65%;
 	border-top-right-radius: 65%;
 	border-style: none;
 	border-top-style: solid;
 
 	height: 75px;
-	margin-left: -17px;
-	width: 285px;
+	margin-left: -55px;
+	width: 250px;
 }
 
-.lips-center-left {
-	height: 50px;
+.lips-center-left {	
+	height: 40px;
+	overflow: hidden;
+	width: 60px;
+}
+
+.lips-center-left-inside {
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 100% 50%;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	content: " ";
+	display: block;
+	height: 40px;
 	margin-left: -30px;
-	margin-top: -50px;
+	margin-top: -26px;
 	width: 100px;
 }
 
@@ -226,8 +252,8 @@ div {
 .lips-left {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 50%;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 30%;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 50%;
 	border-right: none;
 	height: 50px;
 	left: -25px;
