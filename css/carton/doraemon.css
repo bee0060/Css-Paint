@@ -211,7 +211,7 @@ div {
 .lips-center {	
 	height: 75px;
 	overflow: hidden;
-	width: 180px;
+	width: 145px;
 }
 
 .lips-center-inside {
@@ -221,27 +221,28 @@ div {
 	border-top-style: solid;
 
 	height: 75px;
-	margin-left: -55px;
+	margin-left: -50px;
 	width: 250px;
 }
 
 .lips-center-left {	
 	height: 40px;
+	margin-left: 10px;
 	overflow: hidden;
-	width: 60px;
+	width: 40px;
 }
 
 .lips-center-left-inside {
 	border-bottom-left-radius: 50% 50%;
-	border-bottom-right-radius: 100% 50%;
+	border-bottom-right-radius: 50% 50%;
 	border-top:none;
 	border-left:none;
 	border-right:none;
 	content: " ";
 	display: block;
-	height: 40px;
+	height: 45px;
 	margin-left: -30px;
-	margin-top: -26px;
+	margin-top: -36px;
 	width: 100px;
 }
 
@@ -250,17 +251,17 @@ div {
 }
 
 .lips-left {
-	border-top-left-radius: 20px;
-	border-top-right-radius: 50%;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 0%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 0%;
 	border-right: none;
-	height: 50px;
-	left: -25px;
-	top: -50px;
-	width: 50px;
+	height: 60px;
+	left: -22px;
+	top: -59px;
+	width: 40px;
 
-	-webkit-transform: rotate(20deg) ;
+	-webkit-transform: rotate(15deg) ;
 }
 
 .lips-right {
