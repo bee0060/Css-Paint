@@ -247,7 +247,23 @@ div {
 }
 
 .lips-center-right {
+	height: 40px;
+	overflow: hidden;
+	width: 40px;
+}
 
+.lips-center-right-inside {
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	content: " ";
+	display: block;
+	height: 45px;
+	margin-left: -30px;
+	margin-top: -36px;
+	width: 100px;
 }
 
 .lips-left {
