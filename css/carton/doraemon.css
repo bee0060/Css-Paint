@@ -204,7 +204,7 @@ div {
 }
 
 .lips {
-	height: 75px;
+	height: 10px;
 	width: 250px;
 }
 
@@ -261,8 +261,8 @@ div {
 	content: " ";
 	display: block;
 	height: 45px;
-	margin-left: -30px;
-	margin-top: -36px;
+	margin-left: -34px;
+	margin-top: -37px;
 	width: 100px;
 }
 
@@ -283,13 +283,18 @@ div {
 .lips-right {
 	border-top-right-radius: 50%;
 	border-top-left-radius: 0%;
-	border-bottom-right-radius: 50px;
-	border-bottom-left-radius: 40% 25%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 0%;
 	border-left: none;
-	height: 67px;
-	right: -26px;
-	top: -47px;
-	width: 50px;
+	height: 60px;
+	right: -22px;
+	top: -59px;
+	width: 40px;
 
-	-webkit-transform: rotate(0deg) ;
+	-webkit-transform: rotate(-9deg) ;
+}
+
+.mouth {
+	height: 119px;
+	width: 289px;
 }
