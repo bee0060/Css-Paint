@@ -76,6 +76,10 @@ div {
 	border: 3px solid black;
 }
 
+.oh {
+	overflow: hidden;
+}
+
 /*卡通组件*/
 .doraemon {
 	height: 500px;
@@ -363,4 +367,20 @@ div {
 	z-index: 3;
 
 	-webkit-transform: rotate(45deg);
+}
+
+.collar {
+	margin-top:-40px;
+	height: 40px;
+	width: 220px;
+}
+
+.collar-inside {	
+	border: 20px solid rgb(216, 5, 23);
+ 	/*border-left: none;
+ 	border-right: none;*/
+	height: 50px;
+	margin-top: -50px;
+	margin-left: -19px;
+	width: 220px;
 }
