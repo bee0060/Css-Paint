@@ -64,6 +64,10 @@ div {
 	background-color: #EF6C1C;
 }
 
+.bacc-bell-yellow {
+	background-color: #F5D600;
+}
+
 .border-black-1 {
 	border: 1px solid black;
 }
@@ -383,4 +387,38 @@ div {
 	margin-top: -50px;
 	margin-left: -19px;
 	width: 220px;
+}
+
+.bell {
+	height: 53px;
+	margin-top: -15px;
+	width: 53px;
+}
+
+.bell-middle-curve {
+	height: 50px;
+	width: 100px;
+}
+
+.bell-middle-curve-1 {
+	margin-top: 12px;
+	margin-left:-27px;
+}
+
+.bell-middle-curve-2 {
+	margin-top: -48px;
+	margin-left:-27px;
+}
+
+.bell-hole {
+	height: 8px;
+	margin-top: -46px;
+	margin-left: 21px;
+	width: 8px;
+}
+
+.bell-gap {
+	height: 16px;
+	margin-left: 26px;
+	width: 0px;
 }
