@@ -52,6 +52,10 @@ div {
 	background-color: black;
 }
 
+.bacc-blue {
+	background-color: rgb(2, 159, 227);
+}
+
 .bacc-brown-red {
 	background-color: rgb(216, 5, 23);
 }
@@ -90,12 +94,12 @@ div {
 	width: 500px;
 }
 
-.head {
-	background-color: rgb(2, 159, 227);
+.head {	
 	height: 300px;
 	margin: 0px auto;
 	overflow: hidden;
 	width: 310px;
+	z-index: 2;
 }
 
 .eyes {
@@ -377,6 +381,7 @@ div {
 	margin-top:-40px;
 	height: 40px;
 	width: 220px;
+	z-index: 3;
 }
 
 .collar-inside {	
@@ -393,6 +398,7 @@ div {
 	height: 53px;
 	margin-top: -15px;
 	width: 53px;
+	z-index: 5;
 }
 
 .bell-middle-curve {
@@ -421,4 +427,73 @@ div {
 	height: 16px;
 	margin-left: 26px;
 	width: 0px;
+}
+
+.body {
+	height: 162px;
+	top: -65px;
+	width: 430px;
+	z-index: 1;
+}
+
+.body-inside {
+	border-top-left-radius: 15% 75%;
+	border-top-right-radius: 12% 75%;
+	border-bottom-left-radius: 15% 50%;
+	border-bottom-right-radius: 25% 50%;
+	height: 200px;
+	margin-top: -5px;
+	width: 245px;
+	z-index: 2;
+}
+
+.belly {
+	border-top-left-radius: 37% 50%;
+	border-top-right-radius: 37% 50%;
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	height: 125px;
+	margin-top: -184px;
+	width: 175px;
+	z-index: 10;
+}
+
+.bag {
+	height: 75px;
+	margin-top: 50px;
+	width: 146px;
+}
+
+.bag-top {
+	height: 40px;
+	margin-top: -34px;
+	margin-left: -20px;
+	width: 180px;
+}
+
+.bag-bottom {
+	border-bottom-left-radius: 50% 32%;
+	border-bottom-right-radius: 50% 32%;
+	height: 140px;
+	margin-top: -79px;
+	margin-left: 0px;
+	width: 142px;
+}
+
+.left-hand {
+	height: 80px;
+	margin-top: -144px;
+	margin-left: 25px;
+	width: 80px;
+	z-index: 0;
+}
+
+.left-arm {
+	height: 95px;
+	margin-top: 0px;
+	margin-left: 18px;
+	width: 90px;
+	
+	-webkit-transform: matrix(1, 0, -1.3, 1, 0, -15) rotate(-30deg);
+	-webkit-transform-origin: left bottom;
 }
