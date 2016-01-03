@@ -386,12 +386,24 @@ div {
 
 .collar-inside {	
 	border: 20px solid rgb(216, 5, 23);
- 	/*border-left: none;
- 	border-right: none;*/
 	height: 50px;
 	margin-top: -50px;
 	margin-left: -19px;
 	width: 220px;
+}
+
+.collor-border-top {
+	height: 50px;
+	margin-top: -32px;
+	margin-left: 0px;
+	width: 220px;
+}
+
+.collor-border-bottom {
+	height: 75px;
+	margin-top: -79px;
+	margin-left: -17px;
+	width: 250px;
 }
 
 .bell {
@@ -441,9 +453,9 @@ div {
 	border-top-right-radius: 12% 75%;
 	border-bottom-left-radius: 15% 50%;
 	border-bottom-right-radius: 25% 50%;
-	height: 200px;
+	height: 180px;
 	margin-top: -5px;
-	width: 245px;
+	width: 220px;
 	z-index: 2;
 }
 
@@ -453,7 +465,7 @@ div {
 	border-bottom-left-radius: 50% 50%;
 	border-bottom-right-radius: 50% 50%;
 	height: 125px;
-	margin-top: -184px;
+	margin-top: -165px;
 	width: 175px;
 	z-index: 10;
 }
@@ -461,12 +473,14 @@ div {
 .bag {
 	height: 75px;
 	margin-top: 50px;
+	padding-top: 5px;
 	width: 146px;
 }
 
 .bag-top {
+	border-radius: 40%;
 	height: 40px;
-	margin-top: -34px;
+	margin-top: -42px;
 	margin-left: -20px;
 	width: 180px;
 }
@@ -475,25 +489,98 @@ div {
 	border-bottom-left-radius: 50% 32%;
 	border-bottom-right-radius: 50% 32%;
 	height: 140px;
-	margin-top: -79px;
+	margin-top: -83px;
 	margin-left: 0px;
 	width: 142px;
 }
 
 .left-hand {
 	height: 80px;
-	margin-top: -144px;
+	margin-top: -139px;
 	margin-left: 25px;
 	width: 80px;
 	z-index: 0;
 }
 
 .left-arm {
-	height: 95px;
-	margin-top: 0px;
-	margin-left: 18px;
-	width: 90px;
+	border-top-left-radius: 45% 40%;
+	border-bottom-left-radius: 45% 30%;
+	height: 45px;
+	margin-top: 33px;
+	margin-left: 40px;
+	width: 95px;
 	
-	-webkit-transform: matrix(1, 0, -1.3, 1, 0, -15) rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
 	-webkit-transform-origin: left bottom;
+}
+
+.left-palm {
+	height: 45px;
+	margin-top: -50px;
+	margin-left: 10px;
+	width: 45px;
+}
+
+.right-hand {
+	height: 80px;
+	margin-top: -115px;
+	margin-left: 225px;
+	width: 80px;
+	z-index: 0;
+}
+
+.right-arm {
+	border-top-right-radius: 45% 40%;
+	border-bottom-right-radius: 45% 30%;
+	height: 45px;
+	margin-top: 33px;
+	margin-left: 40px;
+	width: 95px;
+	
+	-webkit-transform: rotate(30deg);
+	-webkit-transform-origin: right bottom;
+}
+
+.right-palm {
+	height: 45px;
+	margin-top: -52px;
+	margin-left: 120px;
+	width: 45px;
+}
+
+.left-leg {
+	height: 63px;
+	margin-top: 25px;
+	margin-left: 101px;
+	width: 120px;
+	z-index: 3;
+}
+
+.left-leg-inside {
+	border-top-left-radius: 35% 100%;
+	border-bottom-left-radius: 25% 55%;
+	border-bottom-right-radius: 100% 20%;
+	border-right: none;
+	height: 55px;
+	margin-top: -16px;
+	width: 120px;
+}
+
+.right-leg {
+	height: 63px;
+	margin-top: -60px;
+	margin-left: 208px;
+	width: 120px;
+	z-index: 3;
+}
+
+.right-leg-inside {
+	border-top-right-radius: 35% 100%;
+	border-bottom-right-radius: 25% 55%;
+	border-bottom-left-radius: 100% 20%;
+	border-left: none;
+	height: 55px;
+	margin-top: -17px;
+	margin-left: -4px;
+	width: 120px;
 }
