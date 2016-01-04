@@ -566,9 +566,25 @@ div {
 	width: 120px;
 }
 
+.crotch {
+	height: 15px;
+	margin-top: -37px;
+	margin-left: 192px;
+	width: 40px;
+	z-index: 5;
+}
+
+.crotch-inside {
+	border-top-left-radius: 50% 60%;
+	border-top-right-radius: 50% 60%;
+	border-bottom: none;
+	height: 50px;
+	width: 40px;
+}
+
 .right-leg {
 	height: 63px;
-	margin-top: -61px;
+	margin-top: -62px;
 	margin-left: 209px;
 	width: 120px;
 	z-index: 3;
@@ -585,18 +601,28 @@ div {
 	width: 120px;
 }
 
-.crotch {
-	height: 15px;
-	margin-top: -36px;
-	margin-left: 192px;
-	width: 40px;
-	z-index: 5;
+.left-foot {
+	border-top-left-radius: 60% 60%;
+	border-top-right-radius: 50% 85%;
+	border-bottom-left-radius: 43% 75%;	
+	border-bottom-right-radius: 50% 55%;
+	height: 50px;
+	margin-top: -32px;
+	margin-left: 72px;
+	width: 133px;
+
+	-webkit-transform: rotate(-5deg);
 }
 
-.crotch-inside {
-	border-top-left-radius: 50% 60%;
-	border-top-right-radius: 50% 60%;
-	border-bottom: none;
+.right-foot {
+	border-top-left-radius: 50% 85%;
+	border-top-right-radius: 60% 60%;
+	border-bottom-left-radius: 50% 55%;
+	border-bottom-right-radius: 43% 75%;
 	height: 50px;
-	width: 40px;
+	margin-top: -30px;
+	margin-left: 221px;
+	width: 133px;
+
+	-webkit-transform: rotate(5deg);
 }
