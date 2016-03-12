@@ -1,0 +1,84 @@
+/*位置选择器*/
+.pos-a {
+	position: absolute;
+}
+
+.pos-r {
+	position: relative;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.m-hoz-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left-32 {
+	left: 32px;
+}
+
+.left-5 {
+	left: 5px;
+}
+
+.top-30 {
+	top: 30px;
+}
+
+/*形状选择器*/
+.circle {
+	border-radius: 50%;
+}
+
+
+/*样式选择器*/
+.bacc-white {
+	background-color: white;
+}
+
+.bacc-black {
+	background-color: black;
+}
+
+.bacc-blue {
+	background-color: rgb(2, 159, 227);
+}
+
+.bacc-brown-red {
+	background-color: rgb(216, 5, 23);
+}
+
+.bacc-mouse-red {
+	background-color: #E80115;
+}
+
+.bacc-mouse-orange {
+	background-color: #EF6C1C;
+}
+
+.bacc-bell-yellow {
+	background-color: #F5D600;
+}
+
+.border-black-1 {
+	border: 1px solid black;
+}
+
+.border-black-2 {
+	border: 2px solid black;
+}
+
+.border-black-3 {
+	border: 3px solid black;
+}
+
+.oh {
+	overflow: hidden;
+}

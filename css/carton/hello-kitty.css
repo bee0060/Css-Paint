@@ -1,0 +1,64 @@
+
+
+/*卡通组件*/
+.container {
+	height: 500px;
+	width: 600px;
+}
+
+.head{
+	border:20px solid #000;
+	border-top-left-radius: 50% 60%;
+	border-top-right-radius: 50% 60%;
+	border-bottom-left-radius: 51% 48%;
+	border-bottom-right-radius: 51% 48%;
+
+	height: 260px;
+	margin-top: 60px;
+	margin-left: 60px;
+	width: 355px;
+}
+
+.eye {
+	background-color: #000;
+	border-radius: 50%;
+	height: 40px;
+	width: 30px;
+}
+
+.eye-left {
+	margin-top: 125px;
+	margin-left: 70px;
+}
+
+.eye-right {
+	margin-top: 125px;
+	margin-left: 250px;
+}
+
+.norse {
+	background-color: rgb(245, 180, 4);
+	border: 8px solid #000;
+	border-radius: 50%;
+	height: 18px;
+	left: -20px;
+	margin-top: 165px;
+	margin-left: 50%;
+	
+	width: 30px;
+}
+
+.bread-left-1 {
+	border: 0px solid #fff;
+	border-radius: 50%;
+	height: 20px;
+	width: 105px;
+}
+
+.bread-left-1-inside {
+	border: 12px solid #000;
+	border-radius: 50%;
+	height: 70px;
+	margin-left:-50px;
+	width: 205px;
+}
