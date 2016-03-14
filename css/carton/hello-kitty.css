@@ -21,9 +21,24 @@
 	-webkit-transform-origin: left top;
 }
 
+.ear-right {
+	border:15px solid #000;
+	border-top-left-radius: 80% 65%	;
+	border-top-right-radius: 15%;
+	border-bottom-right-radius: 25% 95%;
+	height: 100px;
+	margin-top: 30px;
+	margin-left: 255px;
+	width: 130px;
+
+	z-index: 3;
+	-webkit-transform: rotate(-10deg);
+	-webkit-transform-origin: right top;
+}
+
 .head{
 	background-color: #fff;
-	border:20px solid #000;
+	border: 15px solid #000;
 	border-top-left-radius: 50% 60%;
 	border-top-right-radius: 50% 60%;
 	border-bottom-left-radius: 51% 48%;
