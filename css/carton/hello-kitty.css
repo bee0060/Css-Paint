@@ -36,6 +36,77 @@
 	-webkit-transform-origin: right top;
 }
 
+.flower {
+	margin-top: -8px;
+	margin-left: 230px;
+}
+
+.leaf {
+	background-color: rgb(245, 74, 153);
+	border: 12px solid #000;
+	border-top-left-radius: 40px 45px;
+	border-top-right-radius: 40px 45px;
+	width: 40px;
+
+	border-bottom-color: rgb(245, 74, 153);
+	z-index: 6;
+}
+
+.leaf-1 {
+	height: 55px;
+	margin-left: 9px;
+	margin-top: 17px;
+	-webkit-transform: rotate(-30deg);
+}
+
+.leaf-2 {
+	height: 50px;
+	margin-left: 84px;
+	margin-top: 30px;
+	-webkit-transform: rotate(50deg);
+}
+
+.leaf-3 {
+	height: 45px;
+	margin-left: 89px;
+	margin-top: 98px;
+	-webkit-transform: rotate(120deg);
+}
+
+.leaf-4 {
+	height: 45px;
+	margin-left: 30px;
+	margin-top: 125px;
+	-webkit-transform: rotate(190deg);
+}
+
+.leaf-5 {
+	height: 50px;	
+	margin-left: -18px;
+	margin-top: 78px;
+	width: 40px;
+	-webkit-transform: rotate(-105deg);
+}
+
+.flower-center {
+	background-color: rgb(245, 74, 153);
+	border-radius: 50%;
+	height: 82px;
+	margin-top: 64px;
+	margin-left: 21px;
+	width: 95px;
+	z-index: 6;
+}
+
+.flower-heart {
+	background-color: rgb(245, 180, 4);
+	border: 9px solid #000;
+	border-radius: 50%;
+	height: 23px;
+	margin: 20px 25px;
+	width: 23px;
+}
+
 .head{
 	background-color: #fff;
 	border: 15px solid #000;
