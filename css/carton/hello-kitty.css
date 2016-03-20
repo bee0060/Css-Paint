@@ -273,3 +273,69 @@
 	margin-left:-70px;
 	width: 205px;
 }
+
+.body-left {
+	background-color: #000;
+	border: 12px solid #000;
+	border-top-left-radius: 90% 100%;
+	border-bottom-left-radius: 70% 50%;
+	border-bottom-right-radius: 60% 20%;
+
+	height: 240px;
+	margin-left: 125px;
+	margin-top: -43px;
+	width: 135px;
+	z-index: 3;
+}
+
+.body-right {
+	background-color: #000;
+	border: 12px solid #000;
+	border-top-right-radius:  100% 90%;
+	border-bottom-left-radius: 60% 20%;
+	border-bottom-right-radius: 70% 50%;
+
+	height: 240px;
+	margin-left: -46px;
+	margin-top: -43px;
+	width: 135px;
+	z-index: 3;
+}
+
+.neck {
+	background-color: rgb(245, 74, 153);
+	border: 12px solid #000;
+	border-radius: 50%;
+
+	height: 110px;
+	margin-left: 195px;
+	margin-top: -72px;
+	width: 100px;
+	z-index: 4;
+}
+
+.shirt-left {
+	background-color: pink;
+	border-top-left-radius: 100% 100%;
+	border-bottom-left-radius: 70% 50%;
+	border-bottom-right-radius: 60% 20%;
+
+	height: 240px;
+	margin-left: 140px;
+	margin-top: -254px;
+	width: 135px;
+	z-index: 3;
+}
+
+.shirt-right {
+	background-color: pink;
+	border-top-right-radius:  115% 105%;
+	border-bottom-left-radius: 60% 20%;
+	border-bottom-right-radius: 70% 50%;
+
+	height: 240px;
+	margin-left: 245px;
+	margin-top: -254px;
+	width: 135px;
+	z-index: 3;
+}
