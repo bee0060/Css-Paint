@@ -416,3 +416,54 @@
 	width: 25px;
 	z-index: 3;
 }
+
+.right-hand {
+	background-color: white;
+	border: 12px solid #000;
+
+	border-radius: 50%;
+
+	height: 70px;
+	margin-left: 320px;
+	margin-top: -37px;
+	width: 125px;
+	z-index: 2;
+
+	-webkit-transform: rotate(28deg);
+	-webkit-transform-origin: right top;
+}
+
+.right-arm-shirt{
+	background-color: rgb(245, 74, 153);
+	border: 12px solid #000;
+	border-radius: 50%;
+	border-top-right-radius: 0%;
+	border-top-left-radius: 100% 60%;
+
+	height: 70px;
+	margin-left: -15px;
+	margin-top: -7px;
+	width: 60px;
+	z-index: 2;
+}
+
+.right-finger {
+	height: 32px;
+	margin-left: 78px;
+	margin-top: -103px;
+	overflow: hidden;
+	width: 50px;
+
+	-webkit-transform: rotate(18deg);
+	-webkit-transform-origin: right top;
+}
+
+.right-finger-inside {
+	background-color: white;
+	border: 12px solid #000;
+	border-radius: 50%;
+	height: 30px;
+	margin-top: 6px;
+	width: 25px;
+	z-index: 3;
+}
