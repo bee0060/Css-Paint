@@ -1,0 +1,20 @@
+.apple-container {
+	height: 600px;
+	width: 600px;
+}
+
+.apple-body {
+	border-radius: 75% 75% 90% 90%;
+	height: 200px;
+	position: absolute;
+	width: 200px;
+	z-index: 3;
+}
+
+.apple-left {
+
+}
+
+.apple-right {
+	right:2px;
+}
