@@ -7,10 +7,16 @@
 }
 
 .apple-body {
+	height: 150px;
+	width: 200px;
+	z-index: 3;
+}
+
+.apple-body-inside {
 	border-top-left-radius: 60px 70px;
 	border-top-right-radius: 60px 70px;
-	border-bottom-left-radius: 80px 110px;
-	border-bottom-right-radius: 80px 110px;
+	border-bottom-left-radius: 100px 115px;
+	border-bottom-right-radius: 100px 115px;
 	height: 170px;
 	width: 200px;
 	z-index: 3;
@@ -26,5 +32,48 @@
 }
 
 .apple-body-bottom {
+	width: 130px;
+}
+
+.apple-body-bottom-left {
+	height: 15px;
+	width: 65px;
 	z-index: 4;
+}
+
+.apple-body-bottom-left-inside {
+	border-radius: 50%;
+	height: 75px;
+	margin-top: -65px;
+	margin-left: -8px;
+	width: 70px;
+}
+
+.apple-body-bottom-right {
+	height: 15px;
+	width: 65px;
+	z-index: 4;
+}
+
+.apple-body-bottom-right-inside {
+	border-radius: 50%;
+	height: 75px;
+	margin-top: -65px;
+	margin-left: 3px;
+	width: 70px;
+}
+
+.apple-body-bottom-center {
+	height: 15px;
+	left: 28px;
+	top: -2px;
+	width: 70px;
+	z-index: 5;
+}
+
+.apple-body-bottom-center-inside {
+	border-radius: 50%;
+	height: 95px;
+	margin-left: -6px;
+	width: 87px;
 }
