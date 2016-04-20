@@ -2,8 +2,67 @@
 	height: 600px;
 	margin-top: 100px;
 	margin-bottom: 100px;
-	padding-top: 100px;
 	width: 600px;
+}
+
+.apple-leaf {
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	height: 55px;
+	left: 49%;
+	top: -43px;
+	width: 45px;
+	z-index: 6;
+}
+
+.apple-body-top {
+	height: 15px;
+	width: 130px;
+}
+
+.apple-body-top-left {
+	height: 15px;
+	width: 65px;
+	z-index: 4;
+}
+
+.apple-body-top-left-inside {
+	border-radius: 50%;
+	height: 75px;
+	margin-top: 8px;
+	margin-left: -17px;
+	width: 82px;
+}
+
+.apple-body-top-right {
+	height: 15px;
+	width: 65px;
+	z-index: 4;
+}
+
+.apple-body-top-right-inside {
+	border-radius: 50%;
+	height: 75px;
+	margin-top: 8px;
+	margin-left: 1px;
+	width: 82px;
+}
+
+.apple-body-top-center {
+	height: 15px;
+	left: 20px;
+	top: 4px;
+	width: 85px;
+	z-index: 5;
+}
+
+.apple-body-top-center-inside {
+	border-radius: 50%;
+	height: 95px;
+	margin-left: 1px;
+	margin-top: -80px;
+	width: 87px;
+	z-index: 5;
 }
 
 .apple-body {
@@ -17,21 +76,22 @@
 	border-top-right-radius: 60px 70px;
 	border-bottom-left-radius: 100px 115px;
 	border-bottom-right-radius: 100px 115px;
-	height: 170px;
+	height: 175px;
+	margin-top: -5px;
 	width: 200px;
 	z-index: 3;
 }
 
-.apple-body-top {
-	border-bottom-left-radius: 65%;
-	border-bottom-right-radius: 65%;
-	height: 80px;
-	top: 50px;
-	width: 250px;
-	z-index: 4;
+.apple-ate {
+	border-radius: 50%;
+	height: 95px;
+	margin-left: 160px;
+	margin-top: 8px;
+	width: 95px;
 }
 
 .apple-body-bottom {
+	height: 15px;
 	width: 130px;
 }
 
@@ -44,8 +104,8 @@
 .apple-body-bottom-left-inside {
 	border-radius: 50%;
 	height: 75px;
-	margin-top: -65px;
-	margin-left: -8px;
+	margin-top: -66px;
+	margin-left: -7px;
 	width: 70px;
 }
 
@@ -58,15 +118,15 @@
 .apple-body-bottom-right-inside {
 	border-radius: 50%;
 	height: 75px;
-	margin-top: -65px;
-	margin-left: 3px;
+	margin-top: -66px;
+	margin-left: 2px;
 	width: 70px;
 }
 
 .apple-body-bottom-center {
 	height: 15px;
 	left: 28px;
-	top: -2px;
+	top: -3px;
 	width: 70px;
 	z-index: 5;
 }
