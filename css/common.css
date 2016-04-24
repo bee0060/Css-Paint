@@ -83,6 +83,18 @@
 	border: 3px solid black;
 }
 
+.border-red-1 {
+	border: 1px solid red;
+}
+
+.border-red-2 {
+	border: 2px solid red;
+}
+
+.border-red-3 {
+	border: 3px solid red;
+}
+
 .oh {
 	overflow: hidden;
 }
