@@ -1,0 +1,31 @@
+.sky {
+	background-color: #00BFFF;
+	height: 100%;
+	width: 100%;
+
+}
+
+.car-top {
+	height: 50px;
+	top: 500px;
+	width: 200px;
+
+	-webkit-animation-duration: 0.4s;
+  	-webkit-animation-name: shock;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes shock {
+	from {
+		height: 50px;
+		top: 500px;
+		width: 200px;
+	}
+
+	to { 	
+		height: 60px;
+		top: 490px;
+		width: 170px; 
+	}
+}
