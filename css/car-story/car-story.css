@@ -5,27 +5,155 @@
 
 }
 
-.car-top {
-	height: 50px;
-	top: 500px;
-	width: 200px;
+.mountains {
+	height: 400%;
+	width: 100%;
+}
 
+.mountains-1 {	
+	left: -30%;
+	top: 40%;
+}
+
+.mountains-2 {	
+	left: 30%;
+	top: 50%;
+}
+
+.car {
+	height: 320px;
+	width: 600px;
+
+	-webkit-animation-duration: 0.4s, 10s;
+	-webkit-animation-timing-function: ease, linear;
+  	-webkit-animation-name: car-jump-ver, car-jump-hoz;
+  	-webkit-animation-iteration-count: infinite, infinite;
+  	-webkit-animation-direction: alternate, alternate;
+}
+
+.car-top {
+	background-color: #CDC1C5;
+	border-bottom: none;
 	-webkit-animation-duration: 0.4s;
-  	-webkit-animation-name: shock;
+  	-webkit-animation-name: shock-top;
   	-webkit-animation-iteration-count: infinite;
   	-webkit-animation-direction: alternate;
 }
 
-@-webkit-keyframes shock {
+.car-bottom {
+	background-color: #CDC1C5;
+	-webkit-animation-duration: 0.4s;
+  	-webkit-animation-name: shock-bottom;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+.wheel {
+	margin-top: -30px;
+
+	-webkit-animation-duration: 0.4s;
+  	-webkit-animation-name: wheels;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+.wheel-left {
+	margin-left: -10px;
+}
+
+.wheel-right {
+	margin-left: 180px;
+}
+
+.car-speak {
+	color: transparent;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: -50px;
+
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-name: carLineAppear;
+} 
+
+@-webkit-keyframes car-jump-hoz {
 	from {
-		height: 50px;
-		top: 500px;
-		width: 200px;
+		left: 0;
 	}
 
-	to { 	
+	to { 
+		left: 110%;
+	}
+}
+
+@-webkit-keyframes car-jump-ver {
+	from {
+		bottom: 10px;
+	}
+
+	to {
+		bottom: 50px;
+	}
+}
+
+@-webkit-keyframes shock-top {
+	from {
+		height: 100px;
+		top: 0;
+		width: 300px;
+	}
+
+	to {
+		height: 110px;
+		top: -10px;
+		width: 290px; 
+	}
+}
+
+@-webkit-keyframes shock-bottom {
+	from {
+		height: 150px;
+		margin-left: -100px;
+		width: 500px;
+	}
+
+	to {
+		height: 155px;
+		margin-left: -80px;
+		margin-top: -10px;
+		width: 480px; 
+	}
+}
+
+@-webkit-keyframes wheels {
+	from {
 		height: 60px;
-		top: 490px;
-		width: 170px; 
+		margin-top: -30px;
+		width: 65px;
+	}
+
+	to {
+		height: 70px;
+		margin-top: -40px;
+		width: 70px;
+	}
+}
+
+@-webkit-keyframes carLineAppear{
+	from{
+		color: transparent;
+	}
+	20%{
+		color: #000;
+		z-index:10;
+	}
+	80%{
+		color: #000;
+		z-index:10;
+	}
+	to{
+		color: transparent;
+		z-index:1;
 	}
 }

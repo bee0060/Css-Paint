@@ -1,5 +1,5 @@
 .human-speak {
-	color: #fff;
+	color: transparent;
 	float: left;
 	-webkit-animation-duration: 3s;
   	-webkit-animation-name: humanLineAppear;
@@ -28,7 +28,7 @@
 @-webkit-keyframes humanLineAppear{
 	from{
 		top: -50px;
-		color: #fff;
+		color: transparent;
 	}
 	20%{
 		top: -40px;
@@ -42,7 +42,7 @@
 	}
 	to{
 		top: -50px;
-		color: #fff;
+		color: transparent;
 		z-index:1;
 	}
 }

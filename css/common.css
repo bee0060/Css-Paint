@@ -55,8 +55,16 @@
 	background-color: rgb(2, 159, 227);
 }
 
+.bacc-green {
+	background-color: green;
+}
+
 .bacc-brown-red {
 	background-color: rgb(216, 5, 23);
+}
+
+.bacc-brown-green {
+	background-color: #003300;
 }
 
 .bacc-mouse-red {
