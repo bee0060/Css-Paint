@@ -24,11 +24,12 @@
 	height: 320px;
 	width: 600px;
 
-	-webkit-animation-duration: 0.4s, 10s;
-	-webkit-animation-timing-function: ease, linear;
-  	-webkit-animation-name: car-jump-ver, car-jump-hoz;
-  	-webkit-animation-iteration-count: infinite, infinite;
-  	-webkit-animation-direction: alternate, alternate;
+	-webkit-animation-duration: 0.4s, 10s, 2s;
+	-webkit-animation-timing-function: ease, linear, ease;
+  	-webkit-animation-name: car-jump-ver, car-jump-hoz, car-fly;
+  	-webkit-animation-iteration-count: infinite, infinite, 2;
+  	-webkit-animation-direction: alternate, alternate, alternate;
+  	-webkit-animation-delay: 0s, 0s, 4s;
 }
 
 .car-top {
@@ -94,6 +95,18 @@
 
 	to {
 		bottom: 50px;
+	}
+}
+
+@-webkit-keyframes car-fly {
+	from {
+		margin-bottom: 0px;
+		-webkit-transform: rotate(0deg);
+	}
+
+	to { 
+		margin-bottom: 1200px;
+		-webkit-transform: rotate(1080deg);
 	}
 }
 
