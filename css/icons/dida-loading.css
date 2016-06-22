@@ -1,0 +1,88 @@
+body {
+	background-color: #81C97E;
+}
+
+.container {
+	margin: 10% auto;
+	height: 500px;
+	position: relative;
+	width: 500px;
+}
+
+.ball {
+	background-color: #FEE;
+	border-radius: 50%;
+	height: 50px;
+	left: 50%;
+	margin-left: -25px;
+	position: absolute;
+	width: 50px;
+
+	-webkit-animation-duration: .7s, .7s;
+  	-webkit-animation-name: ball-dida, ball-deform;
+  	-webkit-animation-timing-function: cubic-bezier(0.5, 0.1, 0.85, 0.3), cubic-bezier(0.5, 0.1, 0.85, 0.3);
+  	-webkit-animation-fill-mode: forwards, forwards;
+  	-webkit-animation-iteration-count: infinite, infinite;
+  	-webkit-animation-direction: alternate, alternate;
+}
+
+.ground {
+	background-color: gray;
+	border-radius: 50%;
+	height: 3px;
+	margin: 0 auto;
+	top: 430px;
+	position: relative;
+	width: 50px;
+
+	-webkit-animation-duration: .7s;
+  	-webkit-animation-name: shadow-deform;
+  	-webkit-animation-timing-function: cubic-bezier(0.5, 0.1, 0.85, 0.3);
+  	-webkit-animation-fill-mode: forwards;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+
+@-webkit-keyframes ball-dida{
+	from{
+		top: 0;
+	}
+	5%{
+		top: 0;
+	}
+	95%{
+		top: 380px;
+	}
+	to{
+		top: 400px;
+	}
+}
+
+@-webkit-keyframes ball-deform{
+	95%{
+		height: 50px;
+		margin-left: -25px;
+		width: 50px; 
+	}
+	to{
+		height: 30px;
+		margin-left: -30px;
+		width: 60px;
+	}
+}
+
+@-webkit-keyframes shadow-deform{
+	from{
+		width: 10px;
+	}
+	5%{
+		width: 10px;
+	}
+	95%{
+		width: 60px;
+	}
+	to{
+		width: 80px;
+	}
+}
