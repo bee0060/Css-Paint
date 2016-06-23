@@ -30,9 +30,10 @@ body {
 	background-color: gray;
 	border-radius: 50%;
 	height: 3px;
-	margin: 0 auto;
+	left: 50%;
+	margin-left: -5px;
 	top: 430px;
-	position: relative;
+	position: absolute;
 	width: 50px;
 
 	-webkit-animation-duration: .7s;
@@ -74,15 +75,19 @@ body {
 
 @-webkit-keyframes shadow-deform{
 	from{
+		margin-left: -5px;
 		width: 10px;
 	}
 	5%{
+		margin-left: -5px;
 		width: 10px;
 	}
 	95%{
+		margin-left: -30px;
 		width: 60px;
 	}
 	to{
+		margin-left: -40px;
 		width: 80px;
 	}
 }
