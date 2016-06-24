@@ -1,0 +1,109 @@
+
+.panel {
+	border: 10px solid #000;
+	height: 500px;
+	position: relative;
+	width: 500px;
+}
+
+.center {
+	border-radius: 50%;
+	height: 30px;
+	left: -15px;
+	margin: 50%;
+	position: absolute;
+	top: -15px;
+	width: 30px;
+}
+
+.hand {
+	margin: 50%;
+	position: absolute;
+
+	-webkit-transform-origin: left center;
+
+  	
+  	-webkit-animation-timing-function: linear;
+  	-webkit-animation-fill-mode: forwards;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: normal;
+}
+
+.hand-hour {
+	height: 16px;
+	top: -8px;
+	width: 160px;
+
+	-webkit-animation-name: hours;
+	-webkit-animation-duration: 43200s;
+}
+
+.hand-minute {
+	height: 10px;
+	top: -5px;
+	width: 200px;
+
+	-webkit-animation-name: minutes;
+	-webkit-animation-duration: 3600s;
+}
+
+.hand-second {
+	height: 4px;
+	top: -2px;
+	width: 240px;
+
+	-webkit-animation-name: seconds;
+	-webkit-animation-duration: 60s;
+}
+
+.oclock-bold {
+	border-right: 40px solid #000;
+	height: 10px;
+	margin: 50%;
+	position: absolute;
+	top: -5px;
+	width: 210px;
+
+	-webkit-transform-origin: left center;
+}
+
+.oclock-normal {
+	
+}
+
+.oclock-1 {
+	-webkit-transform: rotate(-60deg);
+}
+.oclock-2 {
+	-webkit-transform: rotate(-30deg);
+}
+.oclock-3 {
+	-webkit-transform: rotate(0deg);
+}
+.oclock-4 {
+	-webkit-transform: rotate(30deg);
+}
+.oclock-5 {
+	-webkit-transform: rotate(60deg);
+}
+.oclock-6 {
+	-webkit-transform: rotate(90deg);
+}
+.oclock-7 {
+	-webkit-transform: rotate(120deg);
+}
+.oclock-8 {
+	-webkit-transform: rotate(150deg);
+}
+.oclock-9 {
+	-webkit-transform: rotate(180deg);
+}
+.oclock-10 {
+	-webkit-transform: rotate(210deg);
+}
+.oclock-11 {
+	-webkit-transform: rotate(240deg);
+}
+.oclock-12 {
+	-webkit-transform: rotate(-90deg);
+}

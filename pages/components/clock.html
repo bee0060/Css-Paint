@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock (Only Chrome)</title>
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/components/clock.css" />
+</head>
+<body>
+	<div class="panel circle">
+		<div class="center bacc-black"></div>		
+		<div class="hand hand-hour bacc-black"></div>
+		<div class="hand hand-minute bacc-black"></div>
+		<div class="hand hand-second bacc-black"></div>
+		<div class="oclock-bold oclock-1"></div>
+		<div class="oclock-bold oclock-2"></div>
+		<div class="oclock-bold oclock-3"></div>
+		<div class="oclock-bold oclock-4"></div>
+		<div class="oclock-bold oclock-5"></div>
+		<div class="oclock-bold oclock-6"></div>
+		<div class="oclock-bold oclock-7"></div>
+		<div class="oclock-bold oclock-8"></div>
+		<div class="oclock-bold oclock-9"></div>
+		<div class="oclock-bold oclock-10"></div>
+		<div class="oclock-bold oclock-11"></div>
+		<div class="oclock-bold oclock-12"></div>		
+	</div>
+
+	<script>
+		;(function() {
+			var now = new Date(),
+				hour = now.getHours(),
+				min = now.getMinutes(),
+				sec = now.getSeconds(),
+				hourHandDegFrom = (hour + min / 60) * 30 - 90,
+				hourHandDegTo = hourHandDegFrom + 360,
+				minHandDegFrom = (min + sec / 60) * 6 - 90,
+				minHandDegTo = minHandDegFrom + 360,
+				secHandDegFrom = sec * 6 - 90,
+				secHandDegTo = secHandDegFrom + 360,
+				cssText = [],
+				head = document.getElementsByTagName('head')[0],
+				style = document.createElement('style');
+
+			cssText.push('@-webkit-keyframes hours{',
+				'from{ -webkit-transform: rotate(', hourHandDegFrom, 'deg);}',
+				'to{ -webkit-transform: rotate(', hourHandDegTo, 'deg);}',
+				'}',
+				'@-webkit-keyframes minutes{',
+				'from{ -webkit-transform: rotate(', minHandDegFrom, 'deg);}',
+				'to{ -webkit-transform: rotate(', minHandDegTo, 'deg);}',
+				'}',
+				'@-webkit-keyframes seconds{',
+				'from{ -webkit-transform: rotate(', secHandDegFrom, 'deg);}',
+				'to{ -webkit-transform: rotate(', secHandDegTo, 'deg);}',
+				'}'
+			);
+			console.log(hour, min,sec, cssText.join('\n'));
+
+			style.type = "text/css";
+			style.innerHTML = cssText.join('');
+			head.appendChild(style);
+		})();
+	</script>
+</body>
+</html>
