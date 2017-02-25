@@ -1,0 +1,125 @@
+body {
+	align-items: center;
+	background-color: rgba(66, 66, 66, 0.7);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+}
+
+.audio-container {
+	border: 10px solid #554455;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 213px;
+	padding: 0;
+}
+
+.audio-container-shadow {
+	border: none;
+	margin-top: -223px;
+}
+
+.one-audio-line {
+	display: flex;
+	flex: 0 0 100px;
+	flex-direction: column;
+	height: 250px;
+	overflow: hidden;
+	margin-right: 10px;
+	width: 100px;
+	
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-animation-direction: alternate;
+}
+
+.one-audio-line:last-child {
+	margin-right: 0;
+}
+
+.one-audio-line-1 {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-timing-function: ease;
+  	-webkit-animation-name: audio-shake;	
+}
+
+.one-audio-line-2 {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-timing-function: cubic-bezier(.41,1.5,.15,-1.14);
+  	-webkit-animation-name: audio-shake;	
+}
+
+.one-audio-line-3 {
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-delay: 0.1s;	
+	-webkit-animation-timing-function: linear;
+  	-webkit-animation-name: audio-shake;	
+}
+
+.one-audio-line-4 {
+	-webkit-animation-duration: 1.9s;
+	-webkit-animation-delay: 0.2s;
+  	-webkit-animation-name: audio-shake;	
+}
+
+.one-audio-line-5 {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 0s;
+  	-webkit-animation-name: audio-shake;	
+}
+
+.one-audio-line-6 {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0.3s;
+  	-webkit-animation-name: audio-shake;	
+}
+
+.one-audio-block {
+	background-color: #32CD32;
+	flex: 0 0 15px;
+	height: 15px;
+	margin-bottom: 7px;
+	opacity: 0.8;
+	z-index: 10;
+}
+
+.audio-container-shadow .one-audio-block {
+	background-color: #DCDCDC;
+	opacity: 0.6;
+	z-index: 1;
+}
+
+@-webkit-keyframes audio-shake{
+	from{
+		height: 220px;
+	}
+	12.5%{
+		height: 50px;
+	}
+	25%{
+		height: 200px;
+	}
+	37.5%{
+		height: 100px;
+	}
+	50%{
+		height: 250px;
+	}
+	62.5%{
+		height: 10px;
+	}
+	75%{
+		height: 180px;
+	}
+	87.5%{
+		height: 140px;
+	}
+	to{
+		height: 250px;
+	}
+}
