@@ -1,0 +1,46 @@
+body {
+	background-color: #ADD8E6;
+}
+
+h2 {
+	border-bottom: 3px solid white;
+	padding: 20px;
+}
+
+.topic-container {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px 20px;
+}
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+dt {
+	flex: 1 1 100%;
+	margin-bottom: 20px;
+}
+
+dd {
+	cursor: pointer;
+	margin: 0;
+	margin-right: 30px;
+}
+
+dd a {	
+	border: 1px solid white;
+	border-radius: 10px;
+	color: #2222AA;
+	padding: 30px;
+	display: block;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+dd a:hover {
+	background-color: #FAEBD7;
+	color: #BDB76B;
+	opacity: 0.9;
+}
