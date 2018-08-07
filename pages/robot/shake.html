@@ -37,5 +37,18 @@
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener('touchmove', function(event){
+            event.preventDefault();
+        }, { passive: false })
+
+        window.addEventListener('touchstart', function(event){
+            event.preventDefault();
+        }, { passive: false })
+
+        window.addEventListener('touchend', function(event){
+            event.preventDefault();
+        }, { passive: false })
+    </script>
 </body>
 </html>
