@@ -1,0 +1,130 @@
+body {
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  * {
+    user-select: none;
+  }
+  
+  
+  .fr, .fc { display: flex; }
+  .fr { flex-direction: row; }
+  .fc { flex-direction: column; }
+  .aic { align-items: center; }
+  .jcb { justify-content: space-between; }
+  .jcc { justify-content: center; }
+  .jca { justify-content: space-around; }
+  
+  .container {
+    background: white;
+    height: 300px;
+    width: 300px;  
+  }
+  
+  .robot:active {
+    animation-name: shaking;
+    animation-duration: .08s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  @keyframes shaking {
+    10% {    
+      margin-top: 5px;
+    }
+    20% {
+      margin-left: 10px;
+    }
+    70% {
+      margin-top: -5px;    
+    }
+    80% {
+      margin-left: -10px;
+    }
+  }
+  
+  .head {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 150px;
+  }
+  
+  .head-top {
+    margin-top: 10px;
+  }
+  
+  .eye {
+    border: 5px solid #000;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .nose {
+    border: 2px solid #000;
+    height: 15px;
+    width: 10px;
+  }
+  
+  .mouse {
+    border: 2px solid #000;
+    margin-top: 5px;
+    height: 5px;
+    width: 100px;
+  }
+  
+  .body {
+    border: 1px solid #000;
+    border-top: 0;
+    height: 80px;
+    width: 100px;
+  }
+  
+  .arm {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    height: 50px;
+    margin-top: 10px;
+    width: 15px;
+  }
+  
+  .arm-left {
+    margin-left: -15px;
+  }
+  
+  .arm-right {
+    margin-right: -15px;
+  }
+  
+  .body-center {
+    text-align: center;
+  }
+  
+  .legs {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 100px;
+  }
+  
+  .left-leg {
+    border: 1px solid #000;
+    height: 30px;
+    width: 20px;
+  }
+  
+  .right-leg {
+    border: 1px solid #000;
+    height: 30px;
+    width: 20px;
+  }
+  
