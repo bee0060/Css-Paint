@@ -23,6 +23,11 @@ body {
   .jcb { justify-content: space-between; }
   .jcc { justify-content: center; }
   .jca { justify-content: space-around; }
+  .fm { flex: 1; }
+  .fn { flex: 0 0 auto; }
+  .pos-a {
+    position: absolute;
+  }
   
   .container {
     background: white;
@@ -33,7 +38,7 @@ body {
   .robot:active {
     animation-name: shaking;
     animation-duration: .08s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 20;
     animation-timing-function: ease-in-out;
     
     margin-left: 0;
@@ -53,6 +58,13 @@ body {
     80% {
       margin-left: -10px;
     }
+  }
+
+  .robot:active .arm-left {
+    transition: transform .3s linear 1.6s, margin .3s linear 1.6s;
+    transform: rotate(-320deg);
+    margin-left: -50px;
+    margin-top: -20px;
   }
   
   .head {
@@ -107,7 +119,7 @@ body {
   }
   
   .arm-right {
-    margin-right: -15px;
+    margin-left: 100px;
   }
   
   .body-center {
