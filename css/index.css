@@ -1,16 +1,20 @@
 body {
-	background-color: #ADD8E6;
+	overflow: hidden;;
 }
 
-h2 {
-	border-bottom: 3px solid white;
-	padding: 20px;
-}
-
-.topic-container {
+.container {
 	display: flex;
-	flex-direction: column;
-	padding: 0 20px 20px;
+}
+
+.nav {
+	flex: 0 1 200px;
+	height: 100vh;
+	overflow-y: auto;
+}
+
+.content {
+	flex: 4 1;
+	height: 100vh;
 }
 
 dl {
@@ -20,27 +24,37 @@ dl {
 
 dt {
 	flex: 1 1 100%;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 
 dd {
 	cursor: pointer;
 	margin: 0;
-	margin-right: 30px;
 }
 
 dd a {	
 	border: 1px solid white;
 	border-radius: 10px;
 	color: #2222AA;
-	padding: 30px;
+	padding: 5px;
 	display: block;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: none;
 }
 
 dd a:hover {
 	background-color: #FAEBD7;
 	color: #BDB76B;
-	opacity: 0.9;
+}
+
+dd a.active {
+	background-color: rgb(56, 158, 199);
+	color: rgb(255, 255, 255);
+}
+
+.frame {
+	top: -12.5vh;
+	left: calc(-12.5vw + 25px);
+	position: relative;
+	transform: scale(0.8);
 }

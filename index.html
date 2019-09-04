@@ -2,66 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Css Paint (Only Chrome)</title>
+	<title>Hi, welcome to my css paint party.(Only Chrome)</title>
 
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<h2>Hi, welcome to my css paint party.</h2>
+	<div class="container">
+		<div class="nav">
+			<dl>
+				<dt>Sun house</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-1.html')">sun-house-1.html</a></dd>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-2.html')">sun-house-2.html</a></dd>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-3.html')">sun-house-3.html</a></dd>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-4.html')">sun-house-4.html</a></dd>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-5.html')">sun-house-5.html</a></dd>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-6.html')">sun-house-6.html</a></dd>
+			</dl>
 
-	<div class="topic-container">
-		<dl>
-			<dt>Sun house</dt>
-			<dd><a href="pages/sun-house/sun-house-1.html">sun-house-1.html</a></dd>
-			<dd><a href="pages/sun-house/sun-house-2.html">sun-house-2.html</a></dd>
-			<dd><a href="pages/sun-house/sun-house-3.html">sun-house-3.html</a></dd>
-			<dd><a href="pages/sun-house/sun-house-4.html">sun-house-4.html</a></dd>
-			<dd><a href="pages/sun-house/sun-house-5.html">sun-house-5.html</a></dd>
-			<dd><a href="pages/sun-house/sun-house-6.html">sun-house-6.html</a></dd>
-		</dl>
-
-		<dl>
-			<dt>Stories</dt>
-			<dd><a href="pages/car-story/car-story.html">Car Story</a></dd>
-		</dl>
+			<dl>
+				<dt>Stories</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/car-story/car-story.html')">Car Story</a></dd>
+			</dl>
 
 
-		<dl>
-			<dt>Logo</dt>
-			<dd><a href="pages/logo/apple.html">Apple</a></dd>
-		</dl>
+			<dl>
+				<dt>Logo</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/logo/apple.html')">Apple</a></dd>
+			</dl>
 
-		<dl>
-			<dt>Icons</dt>
-			<dd><a href="pages/icons/dida-loading.html">Di-da Loading</a></dd>
-			<dd><a href="pages/icons/ball-wave.html">Ball Wave</a></dd>
-		</dl>
+			<dl>
+				<dt>Icons</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/icons/dida-loading.html')">Di-da Loading</a></dd>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/icons/ball-wave.html')">Ball Wave</a></dd>
+			</dl>
 
-		<dl>
-			<dt>Components</dt>
-			<dd><a href="pages/components/clock.html">Clock</a></dd>
-		</dl>
+			<dl>
+				<dt>Components</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/components/clock.html')">Clock</a></dd>
+			</dl>
 
-		<dl>
-			<dt>Doraemon</dt>
-			<dd><a href="pages/carton/doraemon-1.html">doraemon</a></dd>
-		</dl>
-		
-		<dl>
-			<dt>Hello Kitty</dt>
-			<dd><a href="pages/carton/hello-kitty.html">hello-kitty</a></dd>
-		</dl>
+			<dl>
+				<dt>Doraemon</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/carton/doraemon-1.html')">doraemon</a></dd>
+			</dl>
+			
+			<dl>
+				<dt>Hello Kitty</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/carton/hello-kitty.html')">hello-kitty</a></dd>
+			</dl>
 
-		<dl>
-			<dt>Mucis</dt>
-			<dd><a href="pages/music/audio.html">Audio</a></dd>
-		</dl>
-		<dl>
-			<dt>Robot</dt>
-			<dd><a href="pages/robot/shake.html">Shake</a></dd>
-		</dl>
+			<dl>
+				<dt>Mucis</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/music/audio.html')">Audio</a></dd>
+			</dl>
+			<dl>
+				<dt>Robot</dt>
+				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/robot/shake.html')">Shake</a></dd>
+			</dl>
+		</div>
+
+		<div class="content">
+			<iframe 
+				id="frameContent" 
+				src="" 
+				frameborder="0" 
+				width="125%" 
+				height="125%" 
+				scrolling="no"
+				class="frame">
+			</iframe>
+		</div>
+
 	</div>
-
+	<script>
+		function changeContent(link, url) {
+			var frame = document.getElementById('frameContent');
+			var links = document.getElementsByClassName('active');
+			frame.src = url;
+			Array.prototype.forEach.call(links, link => { link.className = ''; });
+			link.className = 'active';
+		}
+	</script>
 	<script type="text/javascript" src="js/analysis.js"></script>
 </body>
 </html>
