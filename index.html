@@ -11,53 +11,53 @@
 		<div class="nav">
 			<dl>
 				<dt>Sun house</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-1.html')">sun-house-1.html</a></dd>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-2.html')">sun-house-2.html</a></dd>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-3.html')">sun-house-3.html</a></dd>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-4.html')">sun-house-4.html</a></dd>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-5.html')">sun-house-5.html</a></dd>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/sun-house/sun-house-6.html')">sun-house-6.html</a></dd>
+				<dd><a id='sun-house-1' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-1.html')">sun-house-1.html</a></dd>
+				<dd><a id='sun-house-2' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-2.html')">sun-house-2.html</a></dd>
+				<dd><a id='sun-house-3' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-3.html')">sun-house-3.html</a></dd>
+				<dd><a id='sun-house-4' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-4.html')">sun-house-4.html</a></dd>
+				<dd><a id='sun-house-5' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-5.html')">sun-house-5.html</a></dd>
+				<dd><a id='sun-house-6' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-6.html')">sun-house-6.html</a></dd>
 			</dl>
 
 			<dl>
 				<dt>Stories</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/car-story/car-story.html')">Car Story</a></dd>
+				<dd><a id='car-story' href='javascript:void(0);' onclick="changeHash('car-story/car-story.html')">Car Story</a></dd>
 			</dl>
 
 
 			<dl>
 				<dt>Logo</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/logo/apple.html')">Apple</a></dd>
+				<dd><a id='apple' href='javascript:void(0);' onclick="changeHash('logo/apple.html')">Apple</a></dd>
 			</dl>
 
 			<dl>
 				<dt>Icons</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/icons/dida-loading.html')">Di-da Loading</a></dd>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/icons/ball-wave.html')">Ball Wave</a></dd>
+				<dd><a id='dida-loading' href='javascript:void(0);' onclick="changeHash('icons/dida-loading.html')">Di-da Loading</a></dd>
+				<dd><a id='ball-wave' href='javascript:void(0);' onclick="changeHash('icons/ball-wave.html')">Ball Wave</a></dd>
 			</dl>
 
 			<dl>
 				<dt>Components</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/components/clock.html')">Clock</a></dd>
+				<dd><a id='clock' href='javascript:void(0);' onclick="changeHash('components/clock.html')">Clock</a></dd>
 			</dl>
 
 			<dl>
 				<dt>Doraemon</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/carton/doraemon-1.html')">doraemon</a></dd>
+				<dd><a id='doraemon-1' href='javascript:void(0);' onclick="changeHash('carton/doraemon-1.html')">doraemon</a></dd>
 			</dl>
 			
 			<dl>
 				<dt>Hello Kitty</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/carton/hello-kitty.html')">hello-kitty</a></dd>
+				<dd><a id='hello-kitty' href='javascript:void(0);' onclick="changeHash('carton/hello-kitty.html')">hello-kitty</a></dd>
 			</dl>
 
 			<dl>
 				<dt>Mucis</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/music/audio.html')">Audio</a></dd>
+				<dd><a id='audio' href='javascript:void(0);' onclick="changeHash('music/audio.html')">Audio</a></dd>
 			</dl>
 			<dl>
 				<dt>Robot</dt>
-				<dd><a href='javascript:void(0);' onclick="changeContent(this, 'pages/robot/shake.html')">Shake</a></dd>
+				<dd><a id='shake' href='javascript:void(0);' onclick="changeHash('robot/shake.html')">Shake</a></dd>
 			</dl>
 		</div>
 
@@ -75,10 +75,26 @@
 
 	</div>
 	<script>
-		function changeContent(link, url) {
+		window.onload = function() {
+			var defaultPage = 'carton/doraemon-1.html';
+			var search = location.search;
+			var url = search ? search.replace(/\?page=/i, '') : defaultPage;
+			changeContent(url)
+		}
+
+		function changeHash(url) {
+			location.href = `${location.origin}${location.pathname}?page=${url}`;
+			changeContent(url);
+		}
+
+		function changeContent(url) {
 			var frame = document.getElementById('frameContent');
 			var links = document.getElementsByClassName('active');
-			frame.src = url;
+			var targetId = url.match(/\/([^/]+)\.html/)[1];
+			var link = document.getElementById(targetId);
+			frame.src = `pages/${url}`;
+
+			console.log('src', url);
 			Array.prototype.forEach.call(links, link => { link.className = ''; });
 			link.className = 'active';
 		}
