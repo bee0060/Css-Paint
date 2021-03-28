@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Speaking Kid (Only Chrome)</title>
+  <link rel="stylesheet" type="text/css" href="../../css/kids/speaking-kid.css" />
+</head>
+
+<body>
+  <div class="kid">
+    <div class="head">
+      <div class="eyes">
+        <div class="eye eye-left"></div>
+        <div class="eye eye-right"></div>
+      </div>
+      <div class="nose"></div>
+      <div id="mouse" class="mouse">
+        <div class="mouse-inner"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('keydown', (ev) => {
+      console.log('keydown')
+      window.mouse.className += ' mouse-open';
+    })
+
+    document.addEventListener('keyup', (ev) => {
+      console.log('keyup')
+      window.mouse.className = window.mouse.className.replace(/ mouse-open/g, '');
+    })
+  </script>
+</body>
+
+</html>
