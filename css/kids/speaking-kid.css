@@ -43,18 +43,23 @@ body {
   width: 50%;
 }
 
-.mouse-open {
-  border-top: 1px solid #000;
-}
-
 .mouse-open .mouse-inner {
   background-color: lightsalmon;
+}
+
+.mouse-open .mouse-inner::before {
+  border-top: 1px solid #000;
+  content: '';
+  display: block;
+  height: 0;
+  margin-top: 28px;
+  width: 100%;
 }
 
 .mouse-inner {
   border: 1px solid #000;
   border-radius: 50%;
   height: 40px;
-  margin-top: -30px;
+  margin-top: -28px;
   width: 100%;
 }

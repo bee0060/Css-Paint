@@ -24,12 +24,10 @@
   </div>
   <script>
     document.addEventListener('keydown', (ev) => {
-      console.log('keydown')
       window.mouse.className += ' mouse-open';
     })
 
     document.addEventListener('keyup', (ev) => {
-      console.log('keyup')
       window.mouse.className = window.mouse.className.replace(/ mouse-open/g, '');
     })
   </script>
