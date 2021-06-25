@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Hi, welcome to my css paint party.(Only Chrome)</title>
 
 	<link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 	<div class="container">
 		<div class="nav">
 			<dl>
 				<dt>Sun house</dt>
-				<dd><a id='sun-house-1' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-1.html')">sun-house-1.html</a></dd>
-				<dd><a id='sun-house-2' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-2.html')">sun-house-2.html</a></dd>
-				<dd><a id='sun-house-3' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-3.html')">sun-house-3.html</a></dd>
-				<dd><a id='sun-house-4' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-4.html')">sun-house-4.html</a></dd>
-				<dd><a id='sun-house-5' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-5.html')">sun-house-5.html</a></dd>
-				<dd><a id='sun-house-6' href='javascript:void(0);' onclick="changeHash('sun-house/sun-house-6.html')">sun-house-6.html</a></dd>
+				<dd><a id='sun-house-1' href='javascript:void(0);'
+						onclick="changeHash('sun-house/sun-house-1.html')">sun-house-1.html</a></dd>
+				<dd><a id='sun-house-2' href='javascript:void(0);'
+						onclick="changeHash('sun-house/sun-house-2.html')">sun-house-2.html</a></dd>
+				<dd><a id='sun-house-3' href='javascript:void(0);'
+						onclick="changeHash('sun-house/sun-house-3.html')">sun-house-3.html</a></dd>
+				<dd><a id='sun-house-4' href='javascript:void(0);'
+						onclick="changeHash('sun-house/sun-house-4.html')">sun-house-4.html</a></dd>
+				<dd><a id='sun-house-5' href='javascript:void(0);'
+						onclick="changeHash('sun-house/sun-house-5.html')">sun-house-5.html</a></dd>
+				<dd><a id='sun-house-6' href='javascript:void(0);'
+						onclick="changeHash('sun-house/sun-house-6.html')">sun-house-6.html</a></dd>
 			</dl>
 
 			<dl>
 				<dt>Stories</dt>
-				<dd><a id='car-story' href='javascript:void(0);' onclick="changeHash('car-story/car-story.html')">Car Story</a></dd>
+				<dd><a id='car-story' href='javascript:void(0);' onclick="changeHash('car-story/car-story.html')">Car Story</a>
+				</dd>
 			</dl>
 
 
@@ -32,7 +41,8 @@
 
 			<dl>
 				<dt>Icons</dt>
-				<dd><a id='dida-loading' href='javascript:void(0);' onclick="changeHash('icons/dida-loading.html')">Di-da Loading</a></dd>
+				<dd><a id='dida-loading' href='javascript:void(0);' onclick="changeHash('icons/dida-loading.html')">Di-da
+						Loading</a></dd>
 				<dd><a id='ball-wave' href='javascript:void(0);' onclick="changeHash('icons/ball-wave.html')">Ball Wave</a></dd>
 			</dl>
 
@@ -43,12 +53,14 @@
 
 			<dl>
 				<dt>Doraemon</dt>
-				<dd><a id='doraemon-1' href='javascript:void(0);' onclick="changeHash('carton/doraemon-1.html')">doraemon</a></dd>
+				<dd><a id='doraemon-1' href='javascript:void(0);' onclick="changeHash('carton/doraemon-1.html')">doraemon</a>
+				</dd>
 			</dl>
-			
+
 			<dl>
 				<dt>Hello Kitty</dt>
-				<dd><a id='hello-kitty' href='javascript:void(0);' onclick="changeHash('carton/hello-kitty.html')">hello-kitty</a></dd>
+				<dd><a id='hello-kitty' href='javascript:void(0);'
+						onclick="changeHash('carton/hello-kitty.html')">hello-kitty</a></dd>
 			</dl>
 
 			<dl>
@@ -61,29 +73,23 @@
 			</dl>
 			<dl>
 				<dt>Kids</dt>
-				<dd><a id='speakingKid' href='javascript:void(0);' onclick="changeHash('kids/speaking-kid.html')">Speaking Kid</a></dd>
+				<dd><a id='speakingKid' href='javascript:void(0);' onclick="changeHash('kids/speaking-kid.html')">Speaking
+						Kid</a></dd>
 			</dl>
 		</div>
 
-		<div class="content">
-			<iframe 
-				id="frameContent" 
-				src="" 
-				frameborder="0" 
-				width="125%" 
-				height="125%" 
-				scrolling="no"
-				class="frame">
+		<!-- <div class="content">
+			<iframe id="frameContent" src="" frameborder="0" width="125%" height="125%" scrolling="no" class="frame">
 			</iframe>
-		</div>
+		</div> -->
 
 	</div>
 	<script>
-		window.onload = function() {
+		window.onload = function () {
 			var defaultPage = 'carton/doraemon-1.html';
 			var search = location.search;
 			var url = search ? search.replace(/\?page=/i, '') : defaultPage;
-			changeContent(url)
+			// changeContent(url)
 		}
 
 		function changeHash(url) {
@@ -92,17 +98,20 @@
 		}
 
 		function changeContent(url) {
-			var frame = document.getElementById('frameContent');
-			var links = document.getElementsByClassName('active');
-			var targetId = url.match(/\/([^/]+)\.html/)[1];
-			var link = document.getElementById(targetId);
-			frame.src = `pages/${url}`;
+			location.href = `pages/${url}`;
 
-			console.log('src', url);
-			Array.prototype.forEach.call(links, link => { link.className = ''; });
-			link.className = 'active';
+			// var frame = document.getElementById('frameContent');
+			// var links = document.getElementsByClassName('active');
+			// var targetId = url.match(/\/([^/]+)\.html/)[1];
+			// var link = document.getElementById(targetId);
+			// frame.src = `pages/${url}`;
+
+			// console.log('src', url);
+			// Array.prototype.forEach.call(links, link => { link.className = ''; });
+			// link.className = 'active';
 		}
 	</script>
 	<script type="text/javascript" src="js/analysis.js"></script>
 </body>
+
 </html>

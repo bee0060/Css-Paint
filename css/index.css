@@ -1,13 +1,15 @@
 body {
-	overflow: hidden;;
+	overflow: hidden;
 }
 
 .container {
 	display: flex;
+	margin: 20px;
+	overflow: auto;
 }
 
 .nav {
-	flex: 0 1 200px;
+	flex: 1 1 auto;
 	height: 100vh;
 	overflow-y: auto;
 }
@@ -19,28 +21,31 @@ body {
 
 dl {
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
-	padding: 0 10px;
 }
 
 dt {
 	flex: 1 1 100%;
-	margin-bottom: 8px;
+	margin-bottom: 20px;
 }
 
 dd {
 	cursor: pointer;
 	margin: 0;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
 }
 
+
 dd a {	
+	background-color: gainsboro;
 	border: 1px solid white;
 	border-radius: 10px;
 	color: #2222AA;
-	padding: 5px;
+	padding: 20px;
 	display: block;
-	font-size: 14px;
+	font-size: 18px;
 	text-decoration: none;
 }
 
